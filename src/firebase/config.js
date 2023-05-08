@@ -1,5 +1,4 @@
 import * as firebase from 'firebase/app';
-//import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
 import 'firebase/storage';
 import 'firebase/firestore';
 
@@ -12,12 +11,13 @@ const firebaseConfig = {
     appId: "1:233522293134:web:e0e1febd0b94d271e31cdf"
   };
 
+    //ini firebase
   firebase.initializeApp(firebaseConfig);
 
   const projectStorage = firebase.storage();
   const projectFirestore = firebase.firestore();
-  //const app = initializeApp(firebaseConfig);
-
-  export { projectStorage, projectFirestore};
+  const timestamp = firebase.firestore.FieldValue.serverTimestamp;
+  
+  export { projectStorage, projectFirestore, timestamp };
 
   
