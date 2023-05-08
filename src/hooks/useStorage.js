@@ -17,11 +17,11 @@ const useStorage = (file) =>{
 
         },(err)=>{
             setError(err);
-        },async ()=>{
+        }, async () => {
             const url = await storageRef.getDownloadURL();
             setUrl(url);
         })
-    }, [file])
+    }, [file]);
 
     return { progress, url, error}
 }

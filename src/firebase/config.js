@@ -1,18 +1,23 @@
 import * as firebase from 'firebase/app';
+//import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
 import 'firebase/storage';
 import 'firebase/firestore';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBn4fVZOjzyNRpD7Te8iTHGNe57kA9U-rA",
-    authDomain: "beanfactory-70ea4.firebaseapp.com",
-    projectId: "beanfactory-70ea4",
-    storageBucket: "beanfactory-70ea4.appspot.com",
-    messagingSenderId: "981251022673",
-    appId: "1:981251022673:web:6d0d6504902ac606213d70"
+    apiKey: "AIzaSyBlZ4Bq7QO8gZIPzMcuHAi_sjdRkqw2_Kk",
+    authDomain: "beanfactory2-77f23.firebaseapp.com",
+    projectId: "beanfactory2-77f23",
+    storageBucket: "beanfactory2-77f23.appspot.com",
+    messagingSenderId: "233522293134",
+    appId: "1:233522293134:web:e0e1febd0b94d271e31cdf"
   };
+
+  firebase.initializeApp(firebaseConfig);
 
   const projectStorage = firebase.storage();
   const projectFirestore = firebase.firestore();
+  //const app = initializeApp(firebaseConfig);
 
+  export { projectStorage, projectFirestore};
 
-  export { projectStorage, projectFirestore}
+  
