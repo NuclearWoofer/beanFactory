@@ -2,14 +2,30 @@ import React from 'react';
 
 function About() {
   return (
-    //About page explaining the purpose of the website.
     <div>
-
-    <img src='/images/hs1.png' alt="Headshot" style={{ display: 'block', margin: '0 auto', maxHeight: '100%',  maxWidth: '100%' }} />
+      <img src='/images/hs1.png' alt="Headshot" style={{ padding: '10px', display: 'block', margin: '0 auto', maxHeight: '100%', maxWidth: '100%', boxShadow: '0 9px 9px rgba(0, 0, 0, 0.3)' }} />
       <h1>About Michael</h1>
-      <p> This is a personal project created to test my skills in programming using my existing knowledge of React. This entire project is built in React, the database is Google's Firebase which was something new yet familiar to learn and integrate into my project. </p>
-      <p>beanFactory is a place where I also get to share one of my favorite hobbies; miniature painting. I love collecting table-top games such as Dungeon's & Dragons, Warhammer, etc. These games can typically be played with miniature figures representing characters in those games. These miniatures typically can be purchased unpainted and disassemble. One of my favorite things to do is paint these miniatures!</p>
-      <p>Pellentesque mattis turpis vel fringilla euismod. Sed rutrum ante sapien, sed volutpat magna convallis ut. Nulla sit amet metus ultricies, hendrerit urna vitae, dictum massa. Nulla facilisi. Fusce fringilla, justo vel malesuada commodo, tellus nisl posuere urna, nec pulvinar sapien risus id lectus. Proin malesuada augue quis purus pharetra, ut euismod purus pellentesque. Sed vestibulum lacus sit amet est vestibulum, id euismod ex fermentum. Sed sit amet eros diam. Vivamus et magna eget arcu consequat tincidunt eu id leo. Sed vitae tincidunt turpis. Vivamus faucibus dolor ac nisl blandit tristique. Integer nec diam blandit, malesuada ex ut, fringilla felis. Sed nec ligula varius, dignissim tortor sit amet, mollis nulla.</p>
+      <p>
+        This is a personal project created to test my skills in programming using my existing knowledge of React. This entire project is built in React, and the database is Google's Firebase, which was something new yet familiar to learn and integrate into my project.
+      </p>
+      <p>
+        beanFactory is a place where I also get to share one of my favorite hobbies: miniature painting. I love collecting tabletop games such as Dungeons & Dragons, Warhammer, etc. These games can typically be played with miniature figures representing characters in those games. These miniatures are often purchased unpainted and disassembled. One of my favorite things to do is paint these miniatures!
+      </p>
+      <br />
+      <br />
+
+      <ul style={{ listStyleType: 'none', display: 'flex', justifyContent: 'center' }}>
+        <li style={{ margin: '0 10px' }}>
+          <a href='https://www.linkedin.com/in/michael-lopez-a7436b157/' style={{ textDecoration: 'none', color: 'inherit' }} target="_blank" rel="noopener noreferrer">
+            LinkedIn
+          </a>
+        </li>
+        <li style={{ margin: '0 10px' }}>
+          <a href='mailto: miketatooine@gmail.com' style={{ textDecoration: 'none', color: 'inherit' }} target="_blank" rel="noopener noreferrer">
+            Email Me
+          </a>
+        </li>
+      </ul>
     </div>
   );
 }
