@@ -24,6 +24,7 @@ function App() {
           </ul>
         </nav>
         <Routes>
+          {/* UploadForm can commented out when in showcase mode. Perhaps we can include a toggle between showcase mode and upload mode? sign in functionality? idk.*/}
           <Route path="/" element={<div><Title/><UploadForm /><ImageGrid setSelectedImg={setSelectedImg} /></div>} />
           <Route path="/about" element={<About />} />
         </Routes>
