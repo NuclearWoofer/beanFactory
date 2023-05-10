@@ -1,6 +1,9 @@
 import { useState, useEffect } from 'react';
 import { projectStorage, projectFirestore, timestamp } from '../firebase/config';
 
+//mostly used a tutorial for the firebase stuff but all in all, it is fairly simple to understand and navigate. 
+//This here is the useStorage custom hook. Here the file gets passed through for an upload into the Firebase Storage. The info gets passed and is helping the progress bar show realtime progress.
+
 const useStorage = (file) => {
   const [progress, setProgress] = useState(0);
   const [error, setError] = useState(null);

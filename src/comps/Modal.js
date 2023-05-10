@@ -8,7 +8,7 @@ const Modal = ({ setSelectedImg, selectedImg }) => {
       setSelectedImg(null);
     }
   }
-
+//Here we hanfle the pictue enlarger mechanic.
   return (
     <motion.div className="backdrop" onClick={handleClick}
       initial={{ opacity: 0 }}

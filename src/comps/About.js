@@ -2,6 +2,7 @@ import React from 'react';
 
 function About() {
   return (
+    //About page explaining the purpose of the website.
     <div>
 
     <img src='/images/hs1.png' alt="Headshot" style={{ display: 'block', margin: '0 auto', maxHeight: '100%',  maxWidth: '100%' }} />

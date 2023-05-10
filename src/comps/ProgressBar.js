@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import useStorage from '../hooks/useStorage';
 import { motion } from 'framer-motion';
 
+//This is where the progress bar is handled. It is calculated and animated.
 const ProgressBar = ({ file, setFile }) => {
   const { progress, url } = useStorage(file);
 

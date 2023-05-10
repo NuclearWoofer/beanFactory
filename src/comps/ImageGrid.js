@@ -2,12 +2,14 @@ import React from 'react';
 import useFirestore from '../hooks/useFirestore';
 import { motion } from 'framer-motion';
 
+//Here, the useFirestore custom hook gets used to display the images in the firebase collection of images.
 const ImageGrid = ({ setSelectedImg }) => {
   const { docs } = useFirestore('images');
 
   return (
     <div className="img-grid">
       {docs && docs.map(doc => (
+        // using framer motion to have some fancy animation
         <motion.div className="img-wrap" key={doc.id} 
           layout
           whileHover={{ opacity: 1 }}s
