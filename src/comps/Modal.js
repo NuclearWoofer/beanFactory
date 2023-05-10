@@ -1,6 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
+//Here we handle the pictue enlarger mechanic.
+
 const Modal = ({ setSelectedImg, selectedImg }) => {
 
   const handleClick = (e) => {
@@ -8,7 +10,6 @@ const Modal = ({ setSelectedImg, selectedImg }) => {
       setSelectedImg(null);
     }
   }
-//Here we hanfle the pictue enlarger mechanic.
   return (
     <motion.div className="backdrop" onClick={handleClick}
       initial={{ opacity: 0 }}

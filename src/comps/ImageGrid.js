@@ -3,6 +3,7 @@ import useFirestore from '../hooks/useFirestore';
 import { motion } from 'framer-motion';
 
 //Here, the useFirestore custom hook gets used to display the images in the firebase collection of images.
+
 const ImageGrid = ({ setSelectedImg }) => {
   const { docs } = useFirestore('images');
 

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import ProgressBar from './ProgressBar';
 
 //This is the upload form. The picture has to be a png or jpeg otherwise the app will display an error. The upload will will show the name of the file and then upload automatically.
+
 const UploadForm = () => {
   const [file, setFile] = useState(null);
   const [error, setError] = useState(null);
